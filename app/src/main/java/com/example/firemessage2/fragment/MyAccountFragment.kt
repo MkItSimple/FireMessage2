@@ -9,6 +9,7 @@ import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.firemessage2.R
 import com.example.firemessage2.SignInActivity
@@ -51,6 +52,7 @@ class MyAccountFragment : Fragment() {
                     FirestoreUtil.updateCurrentUser(editText_name.text.toString(),
                         editText_bio.text.toString(), null)
                 //toast("Saving")
+                Toast.makeText(context, "Saving", Toast.LENGTH_LONG).show()
             }
 
             // sign out

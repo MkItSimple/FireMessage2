@@ -15,7 +15,6 @@ import org.jetbrains.anko.indeterminateProgressDialog
 import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.newTask
 
-
 class SignInActivity : AppCompatActivity() {
 
     companion object {
