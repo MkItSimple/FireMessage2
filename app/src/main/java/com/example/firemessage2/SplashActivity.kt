@@ -7,6 +7,7 @@ import org.jetbrains.anko.startActivity
 
 class SplashActivity : AppCompatActivity() {
 
+    //
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
