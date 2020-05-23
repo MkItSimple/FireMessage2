@@ -3,6 +3,7 @@ package com.example.firemessage2.util
 import android.content.Context
 import android.util.Log
 import com.example.firemessage2.model.*
+import com.example.firemessage2.recyclerview.item.ImageMessageItem
 import com.example.firemessage2.recyclerview.item.PersonItem
 import com.example.firemessage2.recyclerview.item.TextMessageItem
 import com.google.firebase.auth.FirebaseAuth
@@ -112,7 +113,7 @@ object FirestoreUtil {
                     if (it["type"] == MessageType.TEXT)
                         items.add(TextMessageItem(it.toObject(TextMessage::class.java)!!, context))
                     else
-                        TODO("Add image message")
+                        items.add(ImageMessageItem(it.toObject(ImageMessage::class.java)!!, context))
                 }
                 onListen(items)
             }
